@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CPF</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Gerador de CPF</h1>
+        <div class="cpf-gerado"></div>
+        
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" class="estado">
+            <option value="" disabled selected hidden>Selecione um estado</option>
+            <option value="2">Amazonas</option>
+            <option value="2">Acre</option>
+            <option value="2">Amapá</option>
+            <option value="4">Alagoas</option>
+            <option value="5">Bahia</option>
+            <option value="3">Ceará</option>
+            <option value="1">Distrito Federal</option>
+            <option value="7">Espírito do Santo</option>
+            <option value="1">Goiás</option>
+            <option value="3">Maranhão</option>
+            <option value="6">Minas Gerais</option>
+            <option value="1">Mato Grosso do Sul</option>
+            <option value="2">Pará</option>
+            <option value="4">Paraíba</option>
+            <option value="9">Paraná</option>
+            <option value="4">Pernambuco</option>
+            <option value="3">Piauí</option>
+            <option value="4">Rio Grande do Norte</option>
+            <option value="0">Rio Grande do Sul</option>
+            <option value="7">Rio de Janeiro</option>
+            <option value="2">Rondônia</option>
+            <option value="2">Roraima</option>
+            <option value="9">Santa Catarina</option>
+            <option value="8">São Paulo</option>
+            <option value="5">Sergipe</option>
+            <option value="1">Tocantins</option>
+        </select>
+        <input type="checkbox" name="formatado" id="formatado" class="formatado">
+        <label for="formatado">Incluir pontuação</label>
+        <button class="clickGerar">Gerar CPF</button>
+    </section>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
