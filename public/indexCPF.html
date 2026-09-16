@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de CPF</title>
-</head>
-
-<body>
-    <section class="container">
-        <h1>Gerador de CPF</h1>
-        <div class="cpf-gerado"></div>
-        
+<section class="container">
+    <h1>Gerador de CPF</h1>
+    <div class="cpf-gerado">Clique nas opções</div>
+    <label for="formatado">
+        <input type="checkbox" name="formatado" id="formatado" class="formatado">
+        Incluir pontuação
+    </label>
+    <div class="style-div-options">
         <label for="estado">Estado:</label>
         <select id="estado" name="estado" class="estado">
             <option value="" disabled selected hidden>Selecione um estado</option>
@@ -42,11 +36,6 @@
             <option value="5">Sergipe</option>
             <option value="1">Tocantins</option>
         </select>
-        <input type="checkbox" name="formatado" id="formatado" class="formatado">
-        <label for="formatado">Incluir pontuação</label>
-        <button class="clickGerar">Gerar CPF</button>
-    </section>
-    <script src="./assets/js/bundle.js"></script>
-</body>
-
-</html>
+    </div>
+    <button class="clickGerar">Gerar CPF</button>
+</section>

@@ -18,16 +18,22 @@ export default function geraSenha(qtd,maiuscula,minuscula,numero,simbolo){
     // Precisamos garantir que será enviado um número
     qtd = Number(qtd);
 
-    // Iteração na ordem até a quantidade demandada da senha
-    for(let i = 0; i < qtd; i++) {
+    // Array com as funções geradoras permitidas
+    const opcoesDisponiveis = [];
+    if (maiuscula) opcoesDisponiveis.push(geraMaiuscula);
+    if (minuscula) opcoesDisponiveis.push(geraMinuscula);
+    if (numero) opcoesDisponiveis.push(geraNumero);
+    if (simbolo) opcoesDisponiveis.push(geraSimbolo);
 
-        // Variação em curto circuito, onde só executará a função correspondente se o parâmetro for true 
-        maiuscula && stringArray.push(geraMaiuscula());
-        minuscula && stringArray.push(geraMinuscula());
-        numero && stringArray.push(geraNumero());
-        simbolo && stringArray.push(geraSimbolo());        
+    if (opcoesDisponiveis.length === 0) return '';
+
+    // Iteração na ordem até a quantidade demandada da senha
+    // Seleciona uma função aleatória para cada caractere da senha
+    for (let i = 0; i < qtd; i++) {
+        const funcaoSorteada = opcoesDisponiveis[rand(0, opcoesDisponiveis.length)];
+        stringArray.push(funcaoSorteada());
     }
 
-    return stringArray.join('').slice(0,qtd);
+    return stringArray.join('');
 }
 
