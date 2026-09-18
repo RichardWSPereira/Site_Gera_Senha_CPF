@@ -77,6 +77,7 @@ section {
 
 .container {
     display: block;
+    justify-items: center;
     border-radius: 20px;
     height: 400px;
     width: 500px;
@@ -131,28 +132,37 @@ button {
     margin-top: 8rem;
 }
 
-
-@media (max-height: 1000px) and (max-width:480px) {
+@media (max-height: 1600px) and (max-width:720px) {
     .container {
         margin-top: 12rem;
-        display: flex;
-        align-content: center;
         justify-items: center;
         flex-wrap: wrap;
         width: auto;
         height: auto;
     }
 
-    .style-div-options {
-        margin-top: 0;
-    }
-
     .container h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .cpf-gerado,
     .senha-gerada {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1,5rem;
+    }
+
+    .header nav a {
+        font-size: 1.5rem
+    }
+
+     .paragrafos {
         font-size: 1.5rem;
     }
 }
