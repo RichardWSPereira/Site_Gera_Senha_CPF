@@ -132,37 +132,37 @@ button {
     margin-top: 8rem;
 }
 
-@media (max-height: 1600px) and (max-width:720px) {
+@media (max-height: 900px) and (max-width:400px) {
     .container {
-        margin-top: 12rem;
         justify-items: center;
         flex-wrap: wrap;
-        width: auto;
-        height: auto;
+        width: 350px;
+        height: 400px;
     }
 
     .container h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .cpf-gerado,
     .senha-gerada {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     label {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     button {
-        font-size: 1,5rem;
+        font-size: 1rem;
     }
 
     .header nav a {
-        font-size: 1.5rem
+        font-size: 0.8rem;
     }
 
-     .paragrafos {
-        font-size: 1.5rem;
+    .paragrafos {
+        font-size: 0.8rem;
+        width: 350px;
     }
 }
