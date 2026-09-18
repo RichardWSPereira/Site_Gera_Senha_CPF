@@ -132,7 +132,7 @@ button {
     margin-top: 8rem;
 }
 
-@media (max-height: 900px) and (max-width:400px) {
+@media (max-height: 950px) and (max-width:450px) {
     .container {
         justify-items: center;
         flex-wrap: wrap;
